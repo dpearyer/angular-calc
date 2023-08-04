@@ -123,7 +123,7 @@ bg-pink-900">
         bg-opacity-10
         text-xl
         font-light"
-        > 8 </button>
+        (click)="onClickValue('8', 'number')"> 8 </button>
       </div>
       <div class="w-1/4 border-r border-b border-fuchsia-400" >
         <button class="w-full
@@ -136,7 +136,7 @@ bg-pink-900">
           bg-opacity-10
           text-xl
           font-light"
-          > 9 </button>
+          (click)="onClickValue('9', 'number')"> 9 </button>
         </div>
         <div class="w-1/4 border-r border-b border-fuchsia-400" >
           <button class="w-full
@@ -149,7 +149,7 @@ bg-pink-900">
             bg-opacity-10
             text-xl
             font-light"
-            > x </button>
+            (click)="onClickValue('x', 'function')"> x </button>
           </div>
   </div>
   <!--end second row-->
@@ -167,7 +167,7 @@ bg-pink-900">
       bg-opacity-10
       text-xl
       font-light"
-      > 4 </button>
+      (click)="onClickValue('4', 'number')"> 4 </button>
     </div>
     <div class="w-1/4 border-r border-b border-fuchsia-400" >
       <button class="w-full
@@ -180,7 +180,7 @@ bg-pink-900">
         bg-opacity-10
         text-xl
         font-light"
-        > 5 </button>
+        (click)="onClickValue('5', 'number')"> 5 </button>
       </div>
       <div class="w-1/4 border-r border-b border-fuchsia-400" >
         <button class="w-full
@@ -193,7 +193,7 @@ bg-pink-900">
           bg-opacity-10
           text-xl
           font-light"
-          > 6 </button>
+          (click)="onClickValue('6', 'number')"> 6 </button>
         </div>
         <!--minus sign-->
         <div class="w-1/4 border-r border-b border-fuchsia-400" >
@@ -207,7 +207,7 @@ bg-pink-900">
             bg-opacity-10
             text-xl
             font-light"
-            > - </button>
+            (click)="onClickValue('-', 'function')"> - </button>
           </div>
   </div>
 <!--end third row-->
@@ -225,7 +225,7 @@ bg-pink-900">
       bg-opacity-10
       text-xl
       font-light"
-      > 1 </button>
+      (click)="onClickValue('1', 'number')"> 1 </button>
     </div>
     <div class="w-1/4 border-r border-b border-fuchsia-400" >
       <button class="w-full
@@ -238,7 +238,7 @@ bg-pink-900">
         bg-opacity-10
         text-xl
         font-light"
-        > 2 </button>
+        (click)="onClickValue('2', 'number')"> 2 </button>
       </div>
       <div class="w-1/4 border-r border-b border-fuchsia-400" >
         <button class="w-full
@@ -251,7 +251,7 @@ bg-pink-900">
           bg-opacity-10
           text-xl
           font-light"
-          > 3 </button>
+          (click)="onClickValue('3', 'number')"> 3 </button>
         </div>
         <div class="w-1/4 border-r border-b border-fuchsia-400" >
           <button class="w-full
@@ -264,7 +264,7 @@ bg-pink-900">
             bg-opacity-10
             text-xl
             font-light"
-            > + </button>
+            (click)="onClickValue('+', 'function')" > + </button>
           </div>
   </div>
   <!--end fouth row-->
@@ -279,7 +279,8 @@ bg-pink-900">
       hover:bg-pink-400 hover:bg-opacity-20
       text-white
       text-xl
-      font-light">0</button>
+      font-light"
+      (click)="onClickValue('0', 'number')">0</button>
     </div>
     <!--decimal button-->
     <div class="w-1/4 border r border-fuchsia-400">
@@ -290,7 +291,8 @@ bg-pink-900">
       hover:bg-pink-400 hover:bg-opacity-20
       text-white
       text-xl
-      font-light">.</button>
+      font-light"
+      (click)="onClickValue('.', 'function')">.</button>
     </div>
     <!--Equal button-->
     <div class="w-2/4 border r border-fuchsia-400">
@@ -301,10 +303,11 @@ bg-pink-900">
       hover:bg-pink-400 hover:bg-opacity-20
       text-white
       text-xl
-      font-light">=</button>
+      font-light"
+      (click)="onClickValue('=', 'function')">=</button>
     </div>
   </div>
-  <!--end fifth button
+  <!--end fifth button-->
   </div>
 <!--end of buttons-->
 </div>
