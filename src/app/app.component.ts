@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ang-calculator';
+
+  calValue: number=0;
+  functionT: any = 'Nofunction';
+
+  onClickValue (val:string, type:any){
+    console.log(val, type);
+  }
 }
+
